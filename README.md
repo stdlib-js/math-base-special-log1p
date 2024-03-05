@@ -35,14 +35,32 @@ limitations under the License.
 
 > Evaluate the [natural logarithm][@stdlib/math/base/special/ln] of `1+x`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-log1p
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@deno/mod.js';
+var log1p = require( '@stdlib/math-base-special-log1p' );
 ```
 
 #### log1p( x )
@@ -87,9 +105,9 @@ var v = log1p( -2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var log1p = require( '@stdlib/math-base-special-log1p' );
 
 var x;
 var i;
@@ -106,7 +124,93 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/log1p.h"
+```
+
+#### stdlib_base_log1p( x )
+
+Evaluates the [natural logarithm][@stdlib/math/base/special/ln] of `1+x`.
+
+```c
+double out = stdlib_base_log1p( 4.0 );
+// returns ~1.609
+
+out = stdlib_base_log1p( -1.0 );
+// returns -Infinity
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_log1p( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/log1p.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double x;
+    double v;
+    int i;
+    
+    for ( i = 0; i < 100; i++ ) {
+        x = ( (double)rand() / (double)RAND_MAX ) * 100.0;
+        v = stdlib_base_log1p( x );
+        printf( "log1p(%lf) = %lf\n", x, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -132,7 +236,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -190,9 +294,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln/tree/deno
+[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln
 
-[@stdlib/math/base/special/log]: https://github.com/stdlib-js/math-base-special-log/tree/deno
+[@stdlib/math/base/special/log]: https://github.com/stdlib-js/math-base-special-log
 
 <!-- </related-links> -->
 
