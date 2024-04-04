@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-log1p",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Evaluate the natural logarithm of 1+x.",
   "license": "Apache-2.0",
   "author": {
@@ -57,7 +57,7 @@
     "@stdlib/fs-write-file": "^0.2.1",
     "@stdlib/math-base-assert-is-negative-zero": "^0.2.1",
     "@stdlib/math-base-special-abs": "^0.2.1",
-    "@stdlib/math-base-special-ln": "^0.2.1",
+    "@stdlib/math-base-special-ln": "^0.2.3",
     "@stdlib/math-base-special-round": "^0.2.1",
     "@stdlib/math-base-tools-evalpoly-compile": "^0.2.1",
     "@stdlib/math-base-tools-evalpoly-compile-c": "^0.1.1",
