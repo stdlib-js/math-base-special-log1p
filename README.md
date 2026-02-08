@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@deno/mod.js';
+import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@v0.2.4-deno/mod.js';
 ```
 
 #### log1p( x )
@@ -89,7 +89,7 @@ var v = log1p( -2.0 );
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@deno/mod.js';
+import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@v0.2.4-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
