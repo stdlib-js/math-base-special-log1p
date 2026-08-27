@@ -35,6 +35,22 @@ limitations under the License.
 
 > Evaluate the [natural logarithm][@stdlib/math/base/special/ln] of `1+x`.
 
+<section class="intro">
+
+The function computes the [natural logarithm][natural-logarithm] of `1+x` accurately for small `x`
+
+<!-- <equation class="equation" label="eq:log1p_function" align="center" raw="y = \ln(1 + x)" alt="Natural logarithm of one plus x"> -->
+
+```math
+y = \ln(1 + x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="installation">
 
 ## Installation
@@ -290,6 +306,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/math-base-special-log1p/tree/esm
 [esm-readme]: https://github.com/stdlib-js/math-base-special-log1p/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/math-base-special-log1p/blob/main/branches.md
+
+[natural-logarithm]: https://en.wikipedia.org/wiki/Natural_logarithm
 
 <!-- <related-links> -->
 
